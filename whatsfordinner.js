@@ -96,4 +96,29 @@ window.addEventListener("DOMContentLoaded", (event) => {
     .addEventListener("click", clearIngredients);
 
   document.getElementById("find-recipe").addEventListener("click", findRecipes);
+
+  window.onmessage = function (event) {
+    if (event.data) {
+      if (event.data == "WAIT") {
+        console.log("WAIT");
+      } else if (event.data == "GO") {
+        console.log("lets animate");
+        $.Velocity.RunSequence(loading);
+      }
+    } else {
+      console.log("HTML Code Element received a generic message:");
+      console.log(event.data);
+    }
+  };
+
+  function handleClick(navigateTo) {
+    window.parent.postMessage(
+      {
+        type: "click",
+        label: "button",
+        value: navigateTo,
+      },
+      "*"
+    );
+  }
 });
