@@ -33,6 +33,14 @@
   --lightblue: #e5f4ff;
 }
 
+.home-link {
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 24em;
+  margin-bottom: 2em;
+  margin-right: auto;
+}
+
 .auto-recipes {
   display: block;
   width: 160px;
@@ -742,6 +750,7 @@ input[type="checkbox"]:checked + .ingredient-checkbox:before {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  padding-top: 1;
 }
 
 .kitchen-container-recipe {
@@ -1493,7 +1502,7 @@ input[type="checkbox"]:checked + .ingredient-checkbox:before {
 
 .slideshow {
   width: 813px;
-  height: 200px;
+  height: 100px;
   position: relative;
   z-index: 2;
   opacity: 0;
