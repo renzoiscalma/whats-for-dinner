@@ -78,6 +78,7 @@
 
 body {
   background: var(--background);
+  margin: 0;
 }
 
 .clear {
