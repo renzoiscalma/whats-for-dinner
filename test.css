@@ -22,7 +22,7 @@
 }
 
 :root {
-  --background: #e2e2e2;
+  /* --background: #e2e2e2; */
   --green: #78b569;
   --bright-green: #abff96;
   --orange: #ea854c;
@@ -248,9 +248,6 @@ body {
 }
 
 .form-body-center {
-  max-width: 1440px;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .flex-row {
@@ -266,7 +263,6 @@ body {
 .theForm {
   display: flex;
   flex-direction: column;
-  max-width: 1440px;
   background: #fff;
   padding: 8px;
   font-family: "Dosis-Regular";
@@ -465,26 +461,27 @@ footer {
 /*Header*/
 .header-container {
   background: #fff;
-  max-width: 1440px;
   top: 10px;
   display: flex;
-  justify-content: space-between;
   flex-direction: row;
   font-family: "Dosis-Bold";
   z-index: 98;
+  font-size: 18px;
+  font-family: "Helvetica";
 }
 
 .header-container a:link {
-  color: #404040;
+  color: rgb(255, 254, 252);
   text-decoration: none;
 }
 
 .header-container a:visited {
-  color: #404040;
+  color: rgb(255, 254, 252);
   text-decoration: none;
 }
 
 .header-container a:hover {
+  color: rgb(255, 254, 252);
   color: #ea854c;
   text-decoration: none;
 }
@@ -750,7 +747,6 @@ input[type="checkbox"]:checked + .ingredient-checkbox:before {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding-top: 1;
 }
 
 .kitchen-container-recipe {
@@ -2279,14 +2275,23 @@ h3 {
   }
 
   .header-container {
+    height: 80px;
     background: #fff;
-    max-height: 115px;
-    max-width: 1440px;
     top: 10px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    text-transform: uppercase;
+    background-color: rgb(42, 124, 111);
+    align-items: center;
+    padding-left: 10em;
+    padding-right: 10em;
+    color: rgb(255, 254, 252);
+    margin-bottom: 22px;
+  }
+
+  .nav-links {
+    display: flex;
+    column-gap: 34px;
   }
 
   .header-lower-container .horizontal {
