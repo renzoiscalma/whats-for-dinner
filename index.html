@@ -1,93 +1,20 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>MyFridgeFood - Home</title>
+    <title>What's for Dinner? - Home</title>
     <meta name="viewport" content="width=device-width" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge;chrome=1;" />
     <meta
       name="keywords"
       content="Cooking, Recipes, Easy, Chef, Ingredients, Fun,"
     />
-    <meta
-      name="description"
-      content="Easy recipes using ingredients you already have in the kitchen."
-    />
-    <meta
-      name="google-site-verification"
-      content="1HCeHfEl8Lq1MhD_1txLMDxmShjXb65RdwkuoEKO_yc"
-    />
-    <!-- Favicon -->
-    <link href="/favicon-green.ico" rel="shortcut icon" type="image/x-icon" />
-    <!-- Load Theme -->
+
     <link href="test.css" rel="stylesheet" />
 
     <link media="print" type="text/cs" href="z-print.css" rel="stylesheet" />
     <link rel="stylesheet" href="MobileBanner.css" />
-    <!-- Google Tag Manager 
-    <script>
-        (function (w, d, s, l, i) {
-            w[l] = w[l] || []; w[l].push({
-                'gtm.start': new Date().getTime(), event: 'gtm.js'
-            });
-            var f = d.getElementsByTagName(s)[0],
-                j = d.createElement(s),
-                dl = l != 'dataLayer' ? '&l=' + l : '';
-            j.async = true; j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
-            f.parentNode.insertBefore(j, f);
-        })(window, document, 'script', 'dataLayer', 'GTM-5QWVH9M');
-    </script>
-    End Google Tag Manager 
-    <script>
-        (function (i, s, o, g, r, a, m) {
-            i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
-                (i[r].q = i[r].q || []).push(arguments)
-            }, i[r].l = 1 * new Date(); a = s.createElement(o),
-                m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
-        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
-        ga('create', 'UA-10945264-2', 'auto');
-        ga('send', 'pageview');
-    </script>  -->
-    <script src="sitecode.js"></script>
-    <head>
-      <title>Ingredient Checklist</title>
-      <script>
-        // JavaScript code for handling user input and generating checklist
-        function generateChecklist() {
-          // Get the selected ingredients from the form
-          var ingredients = [];
-          var checkboxes = document.querySelectorAll(
-            'input[type="checkbox"]:checked'
-          );
-          checkboxes.forEach(function (checkbox) {
-            ingredients.push(checkbox.value);
-          });
 
-          // TODO: Perform actions with the selected ingredients, such as saving them to a database or performing further processing
-
-          // Display the selected ingredients on the page
-          var output = document.getElementById("output");
-          output.textContent =
-            "Selected ingredients: " + ingredients.join(", ");
-        }
-      </script>
-    </head>
-    <body>
-      <h1>Ingredient Checklist</h1>
-
-      <form>
-        <h2>Select the ingredients you have in your fridge:</h2>
-        <input type="checkbox" name="ingredient" value="Milk" />Milk<br />
-        <input type="checkbox" name="ingredient" value="Eggs" />Eggs<br />
-        <input type="checkbox" name="ingredient" value="Cheese" />Cheese<br />
-        <!-- Add more ingredients as needed -->
-
-        <button type="button" onclick="generateChecklist()">
-          Generate Checklist
-        </button>
-      </form>
-
-      <div id="output"></div>
-    </body>
+    <div id="output"></div>
 
     <script type="text/javascript">
       jQuery(document).ready(function () {
@@ -116,184 +43,21 @@
         }
       });
     </script>
-
-    <script
-      type="text/javascript"
-      src="https://www.google.com/recaptcha/api.js?render=6LfRPJkjAAAAACzkq-CgFg6XWwVlCwY85yUDUAZj"
-    ></script>
   </head>
   <body>
-    <!-- Google Tag Manager (noscript) -->
-    <noscript>
-      <iframe
-        src="https://www.googletagmanager.com/ns.html?id=GTM-5QWVH9M"
-        height="0"
-        width="0"
-        style="display: none; visibility: hidden"
-      ></iframe>
-    </noscript>
-    <!-- End Google Tag Manager (noscript) -->
-
     <input type="hidden" name="page" id="page" />
     <input type="hidden" name="sWidth" id="sWidth" />
     <div class="form-body-center">
       <form class="theForm" autocomplete="off" id="Reg" name="Reg">
         <div>
-          <div class="header-container">
-            <div class="header-left-container">
-              <div class="hamburger-hover">
-                <div class="hamburger-menu-container">
-                  <img
-                    src="/css/Default/Images/Icons/bars-solid.svg"
-                    class="hamburger"
-                  />
-                </div>
-              </div>
-              <div class="header-lower-container">
-                <div class="header-left-links-ul vertical">
-                  <ul class="header-left-links-ul vertical">
-                    <li class="header-left-links vert-links">
-                      <a href="/bookmarks/">Bookmarks</a>
-                    </li>
-                    <li class="header-left-links vert-links">
-                      <a href="/contests/">Contests</a>
-                    </li>
-                    <li class="header-left-links vert-links">
-                      <a href="/tips/">Tips</a>
-                    </li>
-                    <li class="header-left-links vert-links">
-                      <a href="/submit-a-recipe/">Submit a Recipe</a>
-                    </li>
-                    <li class="header-left-links vert-links">
-                      <a href="/decider/">Decider</a>
-                    </li>
-                    <li class="header-left-links vert-links">
-                      <a href="/copyright-policy/">Copyright Policy</a>
-                    </li>
-                    <li class="header-left-links vert-links">
-                      <a href="/login">Login</a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-              <div class="home">
-                <a href="/"
-                  ><img
-                    class="title phrase"
-                    src="/css/Default/Images/Logos/mff-logo-fridge-green.png"
-                /></a>
-              </div>
-              <div class="header-left-links-ul horizontal">
-                <ul class="header-left-links-ul horizontal">
-                  <li class="header-left-links">
-                    <a href="/bookmarks/">Bookmarks</a>
-                  </li>
-                  <li class="header-left-links">
-                    <a href="/contests/">Contests</a>
-                  </li>
-                  <li class="header-left-links">
-                    <a href="/tips/">Tips</a>
-                  </li>
-                  <li class="header-left-links">
-                    <a href="/submit-a-recipe/">Submit a Recipe</a>
-                  </li>
-                  <li class="header-left-links">
-                    <a href="/decider/">Decider</a>
-                  </li>
-                  <li class="header-left-links">
-                    <a href="/copyright-policy/">Copyright Policy</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div class="header-right-container">
-              <div id="search-box-container">
-                <div class="search-box">
-                  <div class="clear"></div>
-                  <div class="page">
-                    <div class="search">
-                      <div id="search-bar-container">
-                        <input
-                          type="text"
-                          id="search-box"
-                          placeholder="Search"
-                        />
-                        <div id="search-icon-container">
-                          <a href="#" id="searchBoxButton"
-                            ><img
-                              src="/css/Default/Images/Icons/search-icon.png"
-                              id="search-icon"
-                              alt="icon"
-                          /></a>
-                        </div>
-                      </div>
-                      <div id="search-auto-complete">
-                        <div
-                          id="searchAutoCompleteResults"
-                          data-bind="template: { foreach: KeydownSearchRecipes }"
-                          style="display: none"
-                        >
-                          <a
-                            class="auto-recipes"
-                            data-bind="attr: { href: Url, title: Name }"
-                          >
-                            <span data-bind="text: Name"></span>
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="header-right-links horizontal">
-                <a href="/login">Login</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="bannerAdContainer"></div>
+          <div class="header-container"></div>
 
           <div class="content">
             <div class="page">
               <div class="content-main">
-                <!-- MSullivan, AHM, commenting out due to po.st end of service. Nick asked me to investigate	
-
-<div class="bread-crumb" style="text-align: center; height: 33px; overflow: hidden; float:right; padding-bottom:10px;">
-    <div class="pw-widget pw-size-medium" style="margin-top: 7px; float: left; margin-left: 10px;">
-       <a class="pw-button-tumblr"></a>
-       <a class="pw-button-googleplus"></a>
-       <a class="pw-button-reddit"></a>
-       <a class="pw-button-facebook"></a>
-       <a class="pw-button-twitter"></a>
-       <a class="pw-button-stumbleupon"></a>
-       <a class="pw-button-pinterest"></a>
-    </div>
-    <script src="//i.po.st/static/v3/post-widget.js#publisherKey=qk3vlf34oggoq373sql1&retina=true" type="text/javascript"></script>
-</div>
-
-<div class="bread-crumb" style="float:left; font-size:14px;line-height:30px;">
-
-
-</div>
-<div class="clear"></div>
-
--->
-
                 <div id="ahm-ad-1" class="ad-container"></div>
 
-                <div
-                  class="slideshow-wrapper"
-                  style="
-                    position: relative;
-                    margin-bottom: 15px;
-                    padding: 10px;
-                    border: 1px solid #ccc;
-                    background: #efefef;
-                    width: 813px;
-                    margin-left: auto;
-                    margin-right: auto;
-                  "
-                >
+                <div class="slideshow-wrapper" style="">
                   <div
                     class="slideshow cycle-carousel"
                     data-animation="fade"
@@ -301,104 +65,9 @@
                     data-transition-speed="1000"
                     data-transition-frequency="10000"
                     data-sync="True"
-                  >
-                    <div
-                      class="slideshow-slide"
-                      style="
-                        background: url(/media/6611/4food-slide.jpg) no-repeat
-                          50% 50%;
-                        background-size: cover;
-                      "
-                    >
-                      <div class="slideshow-slide-caption">
-                        <h3></h3>
-                        <p>
-                          <a
-                            href="https://play.google.com/store/apps/details?id=com.phonegap.myfridgefood"
-                            target="_blank"
-                            ><img
-                              style="width: 300px; height: 100px"
-                              src="/media/1001/mff-logo.png?width=300&amp;height=100"
-                              alt="mff-logo.png"
-                              rel="1060"
-                          /></a>
-                        </p>
-                        <p>
-                          <strong
-                            ><a
-                              href="https://apps.apple.com/us/app/myfridgefood/id1562524977"
-                              target="_blank"
-                              ><img
-                                style="width: 228px; height: 68px"
-                                src="/media/8944/appstorebadge-003.jpg?width=228px&amp;height=68px"
-                                alt="apple app"
-                                rel="127995"
-                            /></a>
-                            <a
-                              href="https://play.google.com/store/apps/details?id=com.phonegap.myfridgefood"
-                              target="_blank"
-                              ><img
-                                style="width: 221px; height: 66px"
-                                src="/media/8943/appstorebadge-002.jpg?width=221px&amp;height=66px"
-                                alt="Android app"
-                                rel="127994" /></a
-                          ></strong>
-                        </p>
-                        <p>
-                          <strong
-                            >Thank you for stopping by!!! Any questions email
-                            <a href="mailto:Nick@MyFridgeFood.com"
-                              >Nick@MyFridgeFood.com</a
-                            >
-                            :)</strong
-                          >
-                        </p>
-                      </div>
-                    </div>
-                    <div
-                      class="slideshow-slide"
-                      style="
-                        background: url(/media/6613/contest-prize-slide.jpg)
-                          no-repeat 50% 50%;
-                        background-size: cover;
-                      "
-                    >
-                      <div class="slideshow-slide-caption">
-                        <h3>MyFridgeFood Mobile APP</h3>
-                        <p>
-                          <a
-                            href="https://play.google.com/store/apps/details?id=com.phonegap.myfridgefood"
-                            target="_blank"
-                            ><img
-                              style="width: 231px; height: 121px"
-                              src="/media/8873/mffapplogo.jpg?width=231px&amp;height=121px"
-                              alt="myffapp"
-                              rel="115423" /></a
-                          ><a
-                            href="https://apps.apple.com/us/app/myfridgefood/id1562524977"
-                            target="_blank"
-                            ><img
-                              style="width: 187px; height: 56px"
-                              src="/media/8944/appstorebadge-003.jpg?width=187px&amp;height=56px"
-                              alt="apple app"
-                              rel="127995"
-                          /></a>
-                          <a
-                            href="https://play.google.com/store/apps/details?id=com.phonegap.myfridgefood"
-                            target="_blank"
-                            ><img
-                              style="width: 185px; height: 55px"
-                              src="/media/8943/appstorebadge-002.jpg?width=185px&amp;height=55px"
-                              alt="Android app"
-                              rel="127994"
-                          /></a>
-                        </p>
-                      </div>
-                    </div>
-                  </div>
+                  ></div>
                 </div>
                 <div class="clear"></div>
-                <div id="ahm-ad-2" class="ad-container"></div>
 
                 <div class="kitchen-container">
                   <div class="kitchen-container-column">
@@ -409,10 +78,7 @@
                           <div class="clear"></div>
                         </span>
                         <div class="kitchen-desc-container">
-                          <span class="kitchen-desc">QUICK KITCHEN</span
-                          ><a href="" class="kitchen-button"
-                            >Click Here For All Ingredients</a
-                          >
+                          <span class="kitchen-desc">Ingredients</span>
                         </div>
                         <div class="clear"></div>
                       </div>
@@ -7574,11 +7240,6 @@
                         </div>
                       </div>
                     </div>
-
-                    <div class="sidebar">
-                      <div id="ahm-ad-6" class="ad-container"></div>
-                      <div id="ahm-ad-7" class="ad-container"></div>
-                    </div>
                   </div>
                 </div>
                 <div id="ahm-ad-video" class="ad-container"></div>
@@ -7592,55 +7253,13 @@
             </div>
             <div class="clear"></div>
           </div>
-
-          <footer>
-            <div class="footer-container">
-              <div class="footer-left-container" style="width: 300px">
-                <div class="footer-home">
-                  <a href="/"
-                    ><img
-                      src="/css/Default/Images/Logos/mff-logo-fridge-green.png"
-                      alt="logo"
-                  /></a>
-                </div>
-              </div>
-              <div class="footer-center-container" style="width: 300px">
-                <div class="copyright">
-                  Copyright &copy; 2023 MyFridgeFood.com
-                </div>
-              </div>
-              <div class="footer-right-container" style="width: 300px">
-                <div class="footer-right-row-container">
-                  <span class="footer-span">
-                    <a class="footer-links" href="mailto:Nick@myfridgefood.com"
-                      >Contact Us</a
-                    >
-                    |
-                    <a class="footer-links privacy" href="/privacy-policy/"
-                      >Privacy Policy</a
-                    >
-                    <span class="footer-link-sep privacy">|</span>
-                    <a class="footer-links" href="/login">Login</a>
-                  </span>
-                </div>
-              </div>
-            </div>
-          </footer>
         </div>
       </form>
     </div>
     <!-- Scripts  -->
     <script src="/bundle/SiteScripts?v=6Gp8gcCzgm290GKGNmDzIO4dbuTy8y-7coLwiWoAFro1"></script>
     <script src="whatsfordinner.js"></script>
-    <!--[if lt IE 9]>
-      <script>
-        alert(
-          "You are using a really old version of Internet Explorer that does not support modern web standards! You need to upgrade to a better browser ASAP. Myfridgefood.com, along with all other web sites in the world, look alot better on pretty much any other web browser! For everyone's sake please get Chrome, Firefox, or a new version of Internet Explorer. Thanks"
-        );
-      </script>
-    <![endif]-->
 
     <script src="MobileBanner.js"></script>
   </body>
 </html>
-<!-- test -->
