@@ -75,11 +75,15 @@ window.addEventListener("DOMContentLoaded", (event) => {
 
   function findRecipes() {
     if (checkedIngredients.size <= 0) return;
-    window.open(
+    let urlQuery =
       "http://google.com/search?q=" +
-        "Recipes for " +
-        Array.from(checkedIngredients).join(", ")
-    );
+      "Recipes for " +
+      Array.from(checkedIngredients).join(", ");
+    if (window.self !== window.top) {
+      handleSearch(urlQuery);
+    } else {
+      window.open(urlQuery);
+    }
   }
 
   Array.from(document.getElementsByClassName("check-box")).forEach(
@@ -111,7 +115,7 @@ window.addEventListener("DOMContentLoaded", (event) => {
     }
   };
 
-  function handleClick(navigateTo) {
+  function handleSearch(navigateTo) {
     window.parent.postMessage(
       {
         type: "click",
