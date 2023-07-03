@@ -151,10 +151,12 @@ body {
 }
 
 .checked-ingredients {
+  width: 163px;
+  margin-left: 10px;
+  margin-right: 10px;
   position: relative;
   background: #efefef;
   padding: 20px;
-  margin-top: 15px !important;
   margin-bottom: 15px;
   z-index: 10;
   max-width: 740px;
@@ -1896,6 +1898,9 @@ h3 {
 /* Media Queries */
 
 @media print, screen and (max-width: 600px) {
+  .header-container {
+    display: none;
+  }
   .footer-links.privacy,
   .footer-link-sep.privacy {
     display: none;
@@ -1903,6 +1908,9 @@ h3 {
 }
 
 @media print, screen and (min-width: 600px) {
+  .header-container {
+    display: none;
+  }
   .recipe-tile-wrapper {
     width: 550px;
   }
@@ -1945,6 +1953,9 @@ h3 {
 }
 
 @media print, screen and (min-width: 840px) {
+  .header-container {
+    display: none;
+  }
   .recipe-container .recipe-title .recipe-stats div {
     min-width: 33%;
   }
@@ -2002,20 +2013,20 @@ h3 {
   }
 
   .kitchen-container {
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
   }
 
   .kitchen-container-column {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     margin-left: auto;
     margin-right: auto;
   }
 
   .ingredients-container {
-    min-width: 780px;
+    /* min-width: 780px; */
   }
 
   .page-breadcrumb {
@@ -2057,7 +2068,7 @@ h3 {
 
 @media print, screen and (min-width: 1080px) {
   .kitchen-container {
-    flex-direction: row;
+    flex-direction: column;
   }
 
   .kitchen-container-column {
@@ -2133,7 +2144,7 @@ h3 {
   }
 
   .kitchen-container-recipe {
-    flex-direction: row;
+    flex-direction: column;
   }
 
   .recipe-left-wrapper {
@@ -2153,12 +2164,6 @@ h3 {
 
   .kitchen-container-fill {
     display: block;
-  }
-
-  .checked-ingredients {
-    width: 163px;
-    margin-left: 10px;
-    margin-right: 10px;
   }
 
   #search-box:focus {
@@ -2206,6 +2211,10 @@ h3 {
 }
 
 @media print, screen and (min-width: 1100px) {
+  .header-container {
+    display: none;
+  }
+
   .header-left-links a {
     padding: 10px;
     color: #000;
