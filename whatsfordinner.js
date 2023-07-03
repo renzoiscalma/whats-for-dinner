@@ -76,7 +76,7 @@ window.addEventListener("DOMContentLoaded", (event) => {
   function findRecipes() {
     if (checkedIngredients.size <= 0) return;
     let urlQuery =
-      "http://google.com/search?q=" +
+      "https://google.com/search?q=" +
       "Recipes for " +
       Array.from(checkedIngredients).join(", ");
     if (window.self !== window.top) {
